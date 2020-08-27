@@ -1,0 +1,3 @@
+[submodule "run_daemon/webui-aria2"]
+	path = run_daemon/webui-aria2
+	url = https://github.com/ziahamza/webui-aria2.git
