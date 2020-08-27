@@ -1,0 +1,1 @@
+for /f %%f in ('dir /s /b /a:-d *.mp4') DO ( MOVE "%%f" . )

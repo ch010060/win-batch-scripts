@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Exclude *.bat,"[String]*" | rename-item -NewName { "[String]" + $_.Name }
