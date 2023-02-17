@@ -1,0 +1,3 @@
+:: The RTSP URL here is for D-Link DCS-8630LH
+:: D-Link IPCAM RTSP URL reference: https://www.ispyconnect.com/camera/d-link
+ffmpeg -hide_banner -y -loglevel error -rtsp_transport tcp -use_wallclock_as_timestamps 1 -i rtsp://<USERNAME>:<PASSWORD>@<IP>/live/profile.0 -vcodec copy -acodec copy -f segment -reset_timestamps 1 -segment_time 3600 -segment_atclocktime 1 -segment_format mkv -strftime 1 %%Y-%%m-%%d-%%H.%%M.%%S.mkv
